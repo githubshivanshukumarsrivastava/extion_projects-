@@ -7,6 +7,8 @@ print("Current working directory:", os.getcwd())
 
 # Load the trained model and feature columns
 model = joblib.load("data/gradient_boost_model.pkl")
+# model = joblib.load("gradient_boost_model.pkl")
+
 X_train_columns = joblib.load("data/X_train_columns.pkl").columns
 
 st.set_page_config(page_title="Customer Churn Predictor", layout="wide")
